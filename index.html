@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#10253f">
+  <meta name="description" content="A practical, bilingual-friendly guide to Myanmar's computer and IT ecosystem: Unicode, organizations, learning, hardware and local resources.">
+  <title>Myanmar Computer.com Tech Guide — Myanmar Computer &amp; IT Ecosystem</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Noto+Sans+Myanmar:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to content</a>
+  <header class="site-header" id="top">
+    <div class="header-inner wrap">
+      <a class="brand" href="#top" aria-label="MM Tech Guide home">
+        <span class="brand-mark" aria-hidden="true"><span></span><span></span><span></span><span></span></span>
+        <span class="brand-text">Myanmar <b>Computer.com</b><small>MYANMAR IT ECOSYSTEM</small></span>
+      </a>
+      <button class="menu-toggle" type="button" aria-label="Open navigation" aria-expanded="false" aria-controls="site-nav"><span></span><span></span><span></span></button>
+      <nav class="site-nav" id="site-nav" aria-label="Main navigation">
+        <a href="#language" data-nav="language">Language</a>
+        <a href="#ecosystem" data-nav="ecosystem">Ecosystem</a>
+        <a href="#learning" data-nav="learning">Learning</a>
+        <a href="#hardware" data-nav="hardware">Hardware</a>
+      </nav>
+      <div class="header-actions">
+        <label class="search-box" for="site-search">
+          <svg aria-hidden="true" viewBox="0 0 24 24"><circle cx="10.8" cy="10.8" r="6.8"></circle><path d="m16 16 4.5 4.5"></path></svg>
+          <input id="site-search" type="search" placeholder="Search the guide…" autocomplete="off" aria-label="Search all topics">
+          <kbd>/</kbd>
+        </label>
+        <button class="theme-toggle" type="button" aria-label="Switch to dark mode" title="Switch theme"><svg class="theme-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.2 15.2A8.1 8.1 0 0 1 8.8 3.8 8.3 8.3 0 1 0 20.2 15.2Z"></path><path d="M16.5 3v3M15 4.5h3"></path></svg></button>
+      </div>
+    </div>
+    <div class="mobile-search wrap"><label class="search-box" for="mobile-search"><svg aria-hidden="true" viewBox="0 0 24 24"><circle cx="10.8" cy="10.8" r="6.8"></circle><path d="m16 16 4.5 4.5"></path></svg><input id="mobile-search" type="search" placeholder="Search the guide…" autocomplete="off" aria-label="Search all topics"></label></div>
+  </header>
+
+  <main id="main-content">
+    <section class="hero wrap" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="live-dot"></span> A field guide to Myanmar’s digital landscape</p>
+        <h1 id="hero-title">Navigating Myanmar’s <span>Computer &amp; IT Ecosystem</span></h1>
+        <p class="hero-intro">A clear starting point for Burmese Unicode, local tech communities, learning pathways and smarter hardware choices.</p>
+        <div class="hero-actions"><a class="button button-primary" href="#topics">Explore the guide <span aria-hidden="true">↗</span></a><a class="button button-quiet" href="#language">Start with Unicode <span aria-hidden="true">↓</span></a></div>
+        <div class="hero-badges" aria-label="Quick links"><a href="#language"><span>01</span> Unicode basics</a><a href="#ecosystem"><span>02</span> Tech community</a><a href="#learning"><span>03</span> Learn &amp; grow</a><a href="#hardware"><span>04</span> Buy with confidence</a></div>
+      </div>
+      <div class="hero-visual">
+        <img src="public/assets/mict-campus.jpg" alt="Technology park buildings at the Myanmar ICT Park campus in Yangon" fetchpriority="high">
+        <div class="image-shade"></div>
+        <div class="hero-image-note"><span class="note-icon">⌖</span><span><b>MICT Park</b><small>Hlaing Township · Yangon</small></span><a href="https://mictdc.com.mm/about/" target="_blank" rel="noopener noreferrer" aria-label="About MICT Park (opens in a new tab)">↗</a></div>
+        <div class="hero-orbit orbit-one"></div><div class="hero-orbit orbit-two"></div>
+        <div class="hero-stamp"><span>MM</span><small>LOCAL<br>CONTEXT</small></div>
+      </div>
+    </section>
+
+    <section class="topic-shell" id="topics" aria-label="Topic guide">
+      <div class="topic-bar wrap">
+        <div class="topic-tabs" role="tablist" aria-label="Guide topics">
+          <button class="topic-tab is-active" id="tab-language" role="tab" aria-selected="true" aria-controls="language" data-tab-target="language"><span>01</span> Language &amp; fonts</button>
+          <button class="topic-tab" id="tab-ecosystem" role="tab" aria-selected="false" aria-controls="ecosystem" data-tab-target="ecosystem" tabindex="-1"><span>02</span> Organizations</button>
+          <button class="topic-tab" id="tab-learning" role="tab" aria-selected="false" aria-controls="learning" data-tab-target="learning" tabindex="-1"><span>03</span> Learning</button>
+          <button class="topic-tab" id="tab-hardware" role="tab" aria-selected="false" aria-controls="hardware" data-tab-target="hardware" tabindex="-1"><span>04</span> Hardware</button>
+        </div>
+        <p class="tab-hint"><span class="keyboard-dot"></span> Choose a topic to explore</p>
+      </div>
+      <div class="search-feedback wrap" id="search-feedback" role="status" aria-live="polite" hidden></div>
+      <div class="no-results wrap" id="no-results" role="status" aria-live="polite" hidden><b>No matching cards found</b><span>Try Unicode, MCF, learning, laptop or Yangon.</span></div>
+
+      <div class="topic-panels wrap">
+        <section class="topic-panel is-active" id="language" role="tabpanel" aria-labelledby="tab-language" tabindex="0" data-section="language">
+          <div class="section-heading"><div><p class="eyebrow">01 / MYANMAR TYPOGRAPHY</p><h2>Language &amp; fonts</h2><p class="section-lede">Make Burmese text readable, portable and consistent across devices.</p></div><span class="section-index">MM<span>/</span>01</span></div>
+          <div class="feature-grid">
+            <article class="info-card card-feature" data-search-card>
+              <div class="card-topline"><span class="icon-tile icon-emerald">က</span><span class="card-label">THE STANDARD</span></div>
+              <h3>Pyidaungsu Font</h3>
+              <p>Pyidaungsu is the official national standard Unicode font for Myanmar text. Unicode text stores characters consistently, so it can be searched, copied and shared across compatible apps and devices.</p>
+              <div class="card-links"><a href="https://mcf.org.mm/pyidaungsu-font" target="_blank" rel="noopener noreferrer">Font &amp; resources at MCF <span>↗</span></a></div>
+              <div class="tag-row"><span>Unicode</span><span>Cross-platform</span><span>Myanmar script</span></div>
+            </article>
+            <article class="info-card" data-search-card>
+              <div class="card-topline"><span class="icon-tile icon-blue">≋</span><span class="card-label">WHY IT MATTERS</span></div>
+              <h3>Zawgyi-One vs Unicode</h3>
+              <p>Zawgyi is a legacy, non-standard encoding. It may look correct on a device that has Zawgyi installed but appear out of order or unreadable elsewhere. Unicode is the recommended choice for new documents and digital publishing.</p>
+              <div class="compare-strip"><span class="compare-old">Legacy · Zawgyi</span><span class="compare-arrow">→</span><span class="compare-new">Standard · Unicode</span></div>
+              <div class="card-links"><a href="https://mcf.org.mm/" target="_blank" rel="noopener noreferrer">Explore MCF Unicode resources <span>↗</span></a></div>
+            </article>
+            <article class="info-card" data-search-card>
+              <div class="card-topline"><span class="icon-tile icon-violet">⌨</span><span class="card-label">INPUT TOOLS</span></div>
+              <h3>Choose a keyboard</h3>
+              <p>Install a Myanmar Unicode layout that matches your workflow. Keyman offers downloadable language keyboards; KeyMagic is another Myanmar keyboard option. Windows and macOS also include built-in Burmese input methods.</p>
+              <div class="tool-list"><a href="https://keyman.com/keyboards/myanmar" target="_blank" rel="noopener noreferrer"><span class="tool-name">Keyman</span><span>Myanmar keyboards ↗</span></a><a href="https://keymagic.net/" target="_blank" rel="noopener noreferrer"><span class="tool-name">KeyMagic</span><span>Myanmar input tool ↗</span></a><span><span class="tool-name">Windows / macOS</span><span>Settings → Language &amp; input</span></span></div>
+            </article>
+            <article class="info-card preview-card" data-search-card>
+              <div class="card-topline"><span class="icon-tile icon-cyan">Aa</span><span class="card-label">TRY IT YOURSELF</span></div>
+              <h3>Unicode text preview</h3>
+              <p>Type or paste Burmese text below. The preview updates as you write.</p>
+              <label class="visually-hidden" for="burmese-input">Enter Burmese Unicode text</label>
+              <textarea id="burmese-input" lang="my" placeholder="မြန်မာစာကို ဒီမှာ ရေးကြည့်ပါ…" rows="3">မင်္ဂလာပါ။ မြန်မာ Unicode ကို စမ်းသပ်ကြည့်ပါ။</textarea>
+              <div class="preview-output" aria-live="polite"><span>LIVE PREVIEW</span><p id="burmese-preview" lang="my">မင်္ဂလာပါ။ မြန်မာ Unicode ကို စမ်းသပ်ကြည့်ပါ။</p></div>
+              <small class="helper-copy">For best results, use a Unicode keyboard and a Myanmar-capable font.</small>
+            </article>
+          </div>
+          <div class="section-footnote"><span>GOOD TO KNOW</span><p>Changing a font alone does not convert Zawgyi text to Unicode. Convert legacy text before publishing or archiving it.</p><a href="https://mcf.org.mm/" target="_blank" rel="noopener noreferrer">MCF conversion resources ↗</a></div>
+        </section>
+
+        <section class="topic-panel" id="ecosystem" role="tabpanel" aria-labelledby="tab-ecosystem" tabindex="0" data-section="ecosystem" hidden>
+          <div class="section-heading"><div><p class="eyebrow">02 / PEOPLE &amp; PLACES</p><h2>Organizations &amp; tech parks</h2><p class="section-lede">Meet the professional associations and shared spaces shaping the local technology community.</p></div><span class="section-index">MM<span>/</span>02</span></div>
+          <div class="feature-grid">
+            <article class="info-card card-feature" data-search-card><div class="card-topline"><span class="icon-tile icon-emerald">MF</span><span class="card-label">FEDERATION</span></div><h3>Myanmar Computer Federation <span class="card-abbr">MCF</span></h3><p>Established in 1998, MCF describes itself as the umbrella federation for Myanmar’s official computer-related associations, technical groups and committees. Its work spans ICT education, events and policy dialogue.</p><div class="stat-pair"><span><b>1998</b><small>Established</small></span><span><b>National</b><small>Community role</small></span></div><div class="tag-row"><span>Federation</span><span>ICT community</span><span>Myanmar</span></div><div class="card-links"><a href="https://mcf.org.mm/about-us" target="_blank" rel="noopener noreferrer">MCF · About us <span>↗</span></a></div></article>
+            <article class="info-card" data-search-card><div class="card-topline"><span class="icon-tile icon-blue">IT</span><span class="card-label">PROFESSIONAL &amp; INDUSTRY GROUPS</span></div><h3>MCPA / MCIA</h3><p>The Myanmar Computer Professionals Association (MCPA) represents professional and student interests. The Myanmar Computer Industry Association (MCIA) is the industry and enterprise community. Both are part of the MCF network.</p><div class="stat-pair"><span><b>People</b><small>MCPA · professionals &amp; students</small></span><span><b>Industry</b><small>MCIA · member companies</small></span></div><div class="tag-row"><span>Professional network</span><span>Industry</span><span>Skills &amp; events</span></div><div class="card-links"><a href="https://mcf.org.mm/associations" target="_blank" rel="noopener noreferrer">MCF associations <span>↗</span></a></div></article>
+            <article class="info-card" data-search-card><div class="card-topline"><span class="icon-tile icon-cyan">YGN</span><span class="card-label">SHARED ICT CAMPUS</span></div><h3>MICT Park <span class="card-abbr">Yangon</span></h3><p>At the Universities’ Hlaing Campus in Hlaing Township, MICT Park hosts ICT businesses and offers facilities, connectivity and industry-development activities. The official operator also highlights Kanaung Hub’s support for early-stage tech businesses.</p><div class="stat-pair"><span><b>Hlaing</b><small>Township · Yangon</small></span><span><b>2002</b><small>Park established</small></span></div><div class="tag-row"><span>Business campus</span><span>Incubation</span><span>Connectivity</span></div><div class="card-links"><a href="https://mictdc.com.mm/about/" target="_blank" rel="noopener noreferrer">MICTDC · About MICT Park <span>↗</span></a></div></article>
+            <article class="info-card" data-search-card><div class="card-topline"><span class="icon-tile icon-violet">MDY</span><span class="card-label">REGIONAL TECH HUB</span></div><h3>Mandalay ICT Park</h3><p>A second ICT Park was established in Mandalay. MCF’s current overview notes that the site was lost to fire and was being re-established; check with the relevant organizations for the latest operating status before planning a visit or activity.</p><div class="stat-pair"><span><b>Mandalay</b><small>Upper Myanmar</small></span><span><b>Verify</b><small>Current status locally</small></span></div><div class="tag-row"><span>Regional ecosystem</span><span>ICT park</span><span>Status can change</span></div><div class="card-links"><a href="https://mcf.org.mm/about-us" target="_blank" rel="noopener noreferrer">Check MCF’s current overview <span>↗</span></a></div></article>
+          </div>
+          <div class="section-footnote"><span>CONNECT</span><p>Follow association announcements for membership, training, networking and event updates.</p><a href="https://mcf.org.mm/" target="_blank" rel="noopener noreferrer">Myanmar Computer Federation ↗</a></div>
+        </section>
+
+        <section class="topic-panel" id="learning" role="tabpanel" aria-labelledby="tab-learning" tabindex="0" data-section="learning" hidden>
+          <div class="section-heading"><div><p class="eyebrow">03 / BUILD YOUR SKILLS</p><h2>IT education &amp; learning</h2><p class="section-lede">Choose a learning path that fits your current level, from everyday computer skills to computer science.</p></div><span class="section-index">MM<span>/</span>03</span></div>
+          <div class="feature-grid">
+            <article class="info-card card-feature" data-search-card><div class="card-topline"><span class="icon-tile icon-emerald">01</span><span class="card-label">START WITH THE BASICS</span></div><h3>Computer &amp; Office skills</h3><p>Build confidence with file and folder management, typing, email, web safety and cloud storage. Add practical Microsoft Word, Excel and PowerPoint skills for school and work.</p><ul class="clean-list"><li>Computer fundamentals &amp; Windows basics</li><li>Word documents, formatting and print setup</li><li>Excel formulas, tables and charts</li><li>PowerPoint slides and presenting</li></ul><div class="tag-row"><span>Beginner-friendly</span><span>Office</span><span>Digital literacy</span></div></article>
+            <article class="info-card" data-search-card><div class="card-topline"><span class="icon-tile icon-blue">CS</span><span class="card-label">ACADEMIC PATHWAYS</span></div><h3>Computer universities</h3><p>Explore computer-science and information-technology degree pathways through the University of Computer Studies, Yangon (UCSY), the University of Computer Studies, Mandalay (UCSM), and regional universities of computer studies.</p><div class="link-stack"><a href="https://www.ucsy.edu.mm/" target="_blank" rel="noopener noreferrer"><span>UCSY</span><small>Yangon · official university site ↗</small></a><a href="https://www.ucsm.edu.mm/" target="_blank" rel="noopener noreferrer"><span>UCSM</span><small>Mandalay · university site ↗</small></a><span><b>Regional universities</b><small>Check the Ministry / university notices for current programs</small></span></div><div class="tag-row"><span>Computer science</span><span>Degree routes</span></div></article>
+            <article class="info-card" data-search-card><div class="card-topline"><span class="icon-tile icon-violet">▶</span><span class="card-label">LEARN AT YOUR PACE</span></div><h3>Online self-learning</h3><p>Use Burmese-language explainers and guided tutorials to learn practical skills. Start with one small project and keep a record of what you build.</p><div class="link-stack"><a href="https://www.youtube.com/results?search_query=MM+Computer+Guide" target="_blank" rel="noopener noreferrer"><span>MM Computer Guide</span><small>Find current computer guides on YouTube ↗</small></a><a href="https://www.youtube.com/results?search_query=Myanmar+Burmese+web+development+tutorial" target="_blank" rel="noopener noreferrer"><span>Burmese web-dev tutorials</span><small>HTML, CSS, JavaScript &amp; project walkthroughs ↗</small></a><a href="https://developer.mozilla.org/en-US/docs/Learn" target="_blank" rel="noopener noreferrer"><span>MDN Web Docs</span><small>Web development reference &amp; tutorials ↗</small></a></div></article>
+            <article class="info-card" data-search-card><div class="card-topline"><span class="icon-tile icon-cyan">↗</span><span class="card-label">A SIMPLE LEARNING PLAN</span></div><h3>Learn, practice, repeat</h3><p>Keep your study routine manageable. Pair a short lesson with a practical exercise, then save your work in a portfolio folder.</p><ol class="step-list"><li><span>1</span><div><b>Pick one goal</b><small>For example, build a clean spreadsheet or a simple webpage.</small></div></li><li><span>2</span><div><b>Practice in small steps</b><small>Recreate examples, then change them to solve your own task.</small></div></li><li><span>3</span><div><b>Share and get feedback</b><small>Ask a classmate, mentor or local community for review.</small></div></li></ol></article>
+          </div>
+          <div class="section-footnote"><span>LEARNING NOTE</span><p>Course availability and admissions can change. Confirm dates, entry requirements and fees with the institution before applying.</p><a href="https://www.ucsy.edu.mm/" target="_blank" rel="noopener noreferrer">Visit UCSY ↗</a></div>
+        </section>
+
+        <section class="topic-panel" id="hardware" role="tabpanel" aria-labelledby="tab-hardware" tabindex="0" data-section="hardware" hidden>
+          <div class="section-heading"><div><p class="eyebrow">04 / BUY, BUILD, MAINTAIN</p><h2>Hardware &amp; market guide</h2><p class="section-lede">Make a plan before you shop. Compare the complete setup, not just a headline price.</p></div><span class="section-index">MM<span>/</span>04</span></div>
+          <div class="feature-grid">
+            <article class="info-card card-feature" data-search-card><div class="card-topline"><span class="icon-tile icon-emerald">01</span><span class="card-label">LAPTOP BUYING</span></div><h3>Choose for the work</h3><p>For study and office work, compare a recent processor, 16 GB memory if the budget allows, SSD capacity, display quality and battery life. For design or gaming, check the dedicated GPU and cooling.</p><ul class="clean-list"><li>Confirm exact model number and condition</li><li>Ask about warranty coverage and service location</li><li>Test keyboard, screen, ports, Wi-Fi and battery</li><li>Compare total price with OS and accessories included</li></ul><div class="tag-row"><span>Laptop</span><span>Warranty</span><span>Study &amp; work</span></div></article>
+            <article class="info-card" data-search-card><div class="card-topline"><span class="icon-tile icon-blue">PC</span><span class="card-label">CUSTOM BUILDS</span></div><h3>Gaming &amp; workstation PCs</h3><p>Start with the workload and total budget. Balance CPU, GPU, motherboard, RAM, SSD, power supply and case airflow; make sure component compatibility and warranty are confirmed.</p><div class="build-flow"><span>CPU</span><i>+</i><span>GPU</span><i>+</i><span>Memory</span><i>+</i><span>Storage</span><i>+</i><span>Power &amp; cooling</span></div><div class="tag-row"><span>Gaming</span><span>Workstation</span><span>Compatibility</span></div></article>
+            <article class="info-card" data-search-card><div class="card-topline"><span class="icon-tile icon-violet">MM</span><span class="card-label">LOCAL RETAILERS</span></div><h3>Compare stores</h3><p>Use the retailer’s current catalog or contact the shop directly to confirm price, stock, warranty, assembly and delivery before travelling.</p><div class="store-grid"><a href="https://ict.com.mm/collections/kmd" target="_blank" rel="noopener noreferrer">KMD <span>↗</span></a><a href="https://ict.com.mm/" target="_blank" rel="noopener noreferrer">ICT.com.mm <span>↗</span></a><a href="https://technoland.com.mm/" target="_blank" rel="noopener noreferrer">Technoland <span>↗</span></a><span>Unique <small>Check current official channel</small></span><span>CEC <small>Check current official channel</small></span></div><div class="tag-row"><span>Compare quotes</span><span>Local sourcing</span><span>Stock varies</span></div></article>
+            <article class="info-card" data-search-card><div class="card-topline"><span class="icon-tile icon-cyan">⌖</span><span class="card-label">YANGON &amp; MANDALAY</span></div><h3>Shop with confidence</h3><p>Visit an established retailer or authorized reseller. Ask for a written receipt, serial number and warranty terms. For custom systems, request an itemized component list and test the assembled PC before pickup.</p><div class="check-grid"><span><b>01</b> Verify seller &amp; warranty</span><span><b>02</b> Check current stock</span><span><b>03</b> Compare like-for-like specs</span><span><b>04</b> Keep receipt &amp; serials</span></div><p class="small-note">Prices, availability and service coverage change. Confirm details directly with stores in Yangon or Mandalay.</p></article>
+          </div>
+          <div class="section-footnote"><span>BEFORE YOU BUY</span><p>Confirm compatibility, stock, exchange terms and the exact warranty in writing. A lower upfront price may not include the same service or coverage.</p><a href="https://ict.com.mm/" target="_blank" rel="noopener noreferrer">Browse ICT.com.mm ↗</a></div>
+        </section>
+      </div>
+    </section>
+
+    <section class="closing-band wrap"><div class="closing-icon" aria-hidden="true">MM</div><div><p class="eyebrow">YOUR NEXT STEP</p><h2>Make your next digital move a confident one.</h2><p>Start with the topic that answers your question, and come back when you’re ready for the next step.</p></div><a class="button button-light" href="#topics" data-reset-tabs>Browse topics <span aria-hidden="true">↑</span></a></section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-main wrap"><div class="footer-brand"><a class="brand brand-footer" href="#top"><span class="brand-mark" aria-hidden="true"><span></span><span></span><span></span><span></span></span><span class="brand-text">Myanmar <b>Computer.com</b><small>MYANMAR IT ECOSYSTEM</small></span></a><p>A practical starting point for the people, skills and tools behind Myanmar’s digital future.</p><span class="footer-location"><span class="location-dot"></span> Made for Myanmar · မြန်မာနိုင်ငံ</span></div><div class="footer-links"><div><h3>Explore</h3><a href="#language" data-nav="language">Language &amp; fonts</a><a href="#ecosystem" data-nav="ecosystem">Organizations</a><a href="#learning" data-nav="learning">Learning resources</a><a href="#hardware" data-nav="hardware">Hardware guide</a></div><div><h3>Useful links</h3><a href="https://mcf.org.mm/" target="_blank" rel="noopener noreferrer">Myanmar Computer Federation ↗</a><a href="https://mictdc.com.mm/" target="_blank" rel="noopener noreferrer">MICTDC ↗</a><a href="https://www.ucsy.edu.mm/" target="_blank" rel="noopener noreferrer">UCSY ↗</a><a href="https://keyman.com/keyboards/myanmar" target="_blank" rel="noopener noreferrer">Keyman Myanmar ↗</a></div></div></div>
+    <div class="footer-bottom wrap"><span>© <span id="year"></span> Myanmar Computer.com Tech Guide. A community resource</span><p>Developed By:Ma Theint Theint Thu 15/10/2026</p><span>Built for readable, portable Unicode.</span><a href="#top">Back to start ↑</a></div>
+  </footer>
+  <button class="back-to-top" type="button" aria-label="Back to top" title="Back to top">↑</button>
+</body>
+</html>
